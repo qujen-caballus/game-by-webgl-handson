@@ -142,8 +142,9 @@
             let textWidth = GAME_SCREEN_WIDTH / 2;
             let loopWidth = GAME_SCREEN_WIDTH + textWidth;
             let x = GAME_SCREEN_WIDTH - (scene.frame * 2) % loopWidth;
-            ctx.font = 'bold 72px sans-serif';
-            util.drawText('GAME OVER', x, GAME_SCREEN_HEIGHT / 2, '#ff0000', textWidth);
+            ctx.font = 'bold 50px sans-serif';
+            util.drawText('GAME OVER', x, GAME_SCREEN_HEIGHT / 2, '#ff0000', textWidth);ctx.font = 'bold 20px sans-serif';
+            util.drawText('Press Enter', x + 110, GAME_SCREEN_HEIGHT / 2 + 30, '#ff0000', textWidth);
             if(restart === true){
                 restart = false;
                 score = 0;
@@ -165,7 +166,7 @@
         util.drawRect(0, 0, canvas.width, canvas.height, '#eeeeee');
         util.drawRect(0, hero.position.y + 32, canvas.width, canvas.height - hero.position.y, '#333333');
 
-        ctx.font = 'bold 24px monospace';
+        ctx.font = 'bold 24px sans-serif';
         util.drawText(zeroPadding(score, 5), 30, 40, "#111111");
         scene.update();
         hero.update();

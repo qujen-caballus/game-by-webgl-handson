@@ -141,8 +141,10 @@
             let textWidth = GAME_SCREEN_WIDTH / 2;
             let loopWidth = GAME_SCREEN_WIDTH + textWidth;
             let x = GAME_SCREEN_WIDTH - (scene.frame * 2) % loopWidth;
-            ctx.font = 'bold 72px sans-serif';
+            ctx.font = 'bold 50px sans-serif';
             util.drawText('GAME OVER', x, GAME_SCREEN_HEIGHT / 2, '#ff0000', textWidth);
+            ctx.font = 'bold 20px sans-serif';
+            util.drawText('Press Enter', x + 110, GAME_SCREEN_HEIGHT / 2 + 30, '#ff0000', textWidth);
             if(restart === true){
                 restart = false;
                 hero.setStart(
