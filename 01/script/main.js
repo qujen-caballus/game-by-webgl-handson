@@ -30,9 +30,10 @@
         canvas.height = GAME_SCREEN_HEIGHT;
     }
 
+    //描画の関数
     function render(){
         util.drawRect(0, 0, canvas.width, canvas.height, '#eeeeee');
-        ctx.drawImage(image, 0 + x, GAME_SCREEN_HEIGHT - 100);
+        ctx.drawImage(image, 0, GAME_SCREEN_HEIGHT - 100);
         requestAnimationFrame(render);
     }
 })();
