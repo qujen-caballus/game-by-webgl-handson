@@ -113,7 +113,7 @@
                 }
                 
             }
-            else if(scene.frame == 5){
+            else if(scene.frame === 5){
                 for (let i = 0; i < KILLING_ITEM_MAX_COUNT; ++i) {
                     if (killingItemArray[i].life <= 0) {
                         let ka = killingItemArray[i];

@@ -67,8 +67,8 @@
         //スタートシーンの記述
         let nowTime = (Date.now() - startTIme) / 1000;
         if(hero.isStart === true){
-            let justTiem = Date.now();
-            let startTime = (justTiem - hero.comingStart) / 1000;
+            let justTime = Date.now();
+            let startTime = (justTime - hero.comingStart) / 1000;
             //xは登場中増え続ける
             let x = startTime * 50;
             // 一定の位置まで行ったら登場シーンを終える

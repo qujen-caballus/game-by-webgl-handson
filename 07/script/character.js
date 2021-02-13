@@ -58,10 +58,10 @@ class Hero extends Character{
     }
 
     update(){
-        let justTiem = Date.now();
+        let justTime = Date.now();
 
          if(this.isStart === true){
-            let startTime = (justTiem - this.comingStart) / 1000;
+            let startTime = (justTime - this.comingStart) / 1000;
             //xは登場中増え続ける
             let x = startTime * 50;
             // 一定の位置まで行ったら登場シーンを終える
@@ -82,6 +82,7 @@ class Hero extends Character{
 
             //画面の外に出ないようにする
             let screenWidth = this.ctx.canvas.width;
+            //Math.min(Math.max(チェックしたい値,最小値),最大値)
             let dx = Math.min(Math.max(this.position.x, this.width/ 2),(screenWidth - this.width / 2));
             this.position.set(dx, this.position.y);
         }

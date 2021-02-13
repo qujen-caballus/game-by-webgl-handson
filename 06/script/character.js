@@ -73,8 +73,6 @@ class Hero extends Character{
             this.position.set(x, this.position.y);
         }
         this.draw();
-
-        this.ctx.globalAlpha = 1.0;
     }
 
 }

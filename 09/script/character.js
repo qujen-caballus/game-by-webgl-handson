@@ -93,7 +93,6 @@ class Hero extends Character{
         }
         this.draw();
 
-        this.ctx.globalAlpha = 1.0;
     }
 }
 

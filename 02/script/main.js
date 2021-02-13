@@ -7,7 +7,7 @@
     let canvas = null;
     let ctx = null;
     let image = null;
-    let startTIme = null;
+    let startTime = null;
 
     window.addEventListener('load', () => {
         util = new Canvas2DUtility(document.body.querySelector('#main_canvas'));
